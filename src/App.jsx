@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import StudentDetailsPage from "./pages/StudentDetailsPage";
 import UserProfilePage from "./pages/UserProfilePage";
-
+import {Routes, Route} from "react-router-dom";
 
 function App() {
 
@@ -19,6 +19,9 @@ function App() {
         <UserProfilePage />
       </div>
 
+    <Routes>
+      
+    </Routes>
     </div>
   );
 }
