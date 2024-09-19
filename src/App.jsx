@@ -12,15 +12,13 @@ function App() {
       <Navbar />
 
       <div className="pages">
-        <HomePage />
 
-        <StudentDetailsPage />
-
-        <UserProfilePage />
       </div>
 
     <Routes>
-      
+      <Route path={"/"} element={<HomePage />}></Route>
+      <Route path={"/profile"} element={<UserProfilePage />}></Route>
+      <Route path={"/students/:studentId"} element={<StudentDetailsPage />}></Route>
     </Routes>
     </div>
   );
